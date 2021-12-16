@@ -153,10 +153,8 @@ st.write("")
 st.write("")
 st.write("")
 
-# Kolom grafik (Soal A, B, C)
+# Kolom grafik dan opsi grafik untuk Soal A, B, C
 st.header(":bar_chart: Grafik")
-
-# Opsi grafik
 opt = ["Bar", "Line", "Scatter"]
 
 # Soal A
@@ -204,8 +202,7 @@ with st.expander("Lihat Grafik"):
 st.write("")
 st.write("")
 
-# Soal C
-# Membuat Tabel Akumulatif
+# Membuat Tabel Akumulatif / Tabel keseluruhan soal C
 temp = filedata['kode_negara'].ne(filedata['kode_negara'].shift()).cumsum()
 filedata['kumulatif'] = filedata.groupby(temp)['produksi'].cumsum()
 cumdata = filedata[['kode_negara', 'produksi', 'kumulatif']]
