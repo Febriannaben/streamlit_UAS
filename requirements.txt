@@ -1,5 +1,3 @@
-pandas
+Pandas
 PlaceHolder
 plotly.express
-streamlit
-json
