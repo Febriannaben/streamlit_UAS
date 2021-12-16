@@ -1,0 +1,5 @@
+pandas
+PlaceHolder
+plotly.express
+streamlit
+json
