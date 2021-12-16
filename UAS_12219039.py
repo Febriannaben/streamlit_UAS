@@ -48,6 +48,7 @@ kolom_a, kolom_b, kolom_c = st.columns(3)
 ## Mencari yang Terkecil
 with kolom_b:
     st.warning('Jumlah Produksi Minyak Mentah Terkecil Keseluruhan Tahun')
+    df1 = filedata.sort_values(by='produksi')
     df_filt = df1[df1['produksi'] != 0]
     terkecil = df_filt.nsmallest(1, 'produksi')
     x_min = terkecil.iloc[0, 0]
