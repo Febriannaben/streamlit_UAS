@@ -121,7 +121,7 @@ with kolom_e :
         mindata_year = data_yearfilt.nsmallest(1, 'produksi')
         x_min = mindata_year.iloc[0, 0]
         x_prod = str(mindata_year.iloc[0,2])
-        min_nama,min_kode,min_reg,min_subreg = kode(x_min, dict)
+        min_nama,min_kode,min_reg,min_subreg = fungsi_kode(x_min, dict)
         st.write("###### Jumlah Produksi : " + x_prod)
         st.write(min_nama)
         st.write(min_kode)
