@@ -1,3 +1,6 @@
+#Febrian Jenetrius Naben
+#12219039
+
 from logging import PlaceHolder
 import json
 import plotly.express as px
